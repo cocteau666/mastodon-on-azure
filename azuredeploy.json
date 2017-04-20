@@ -3,7 +3,8 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "dockerRegistryImageName": {
-            "type": "String"
+            "type": "String",
+            "value": "cocteau666/mastodon:latest"
         },
         "name": {
             "type": "String"
@@ -18,13 +19,16 @@
             "type": "String"
         },
         "sku": {
-            "type": "String"
+            "type": "String",
+            "value": "Standard"
         },
         "skuCode": {
-            "type": "String"
+            "type": "String",
+            "value": "S1"
         },
         "workerSize": {
-            "type": "String"
+            "type": "String",
+            "value": "1"
         },
         "serverFarmResourceGroup": {
             "type": "String"
