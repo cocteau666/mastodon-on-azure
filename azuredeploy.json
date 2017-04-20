@@ -4,7 +4,7 @@
     "parameters": {
         "dockerRegistryImageName": {
             "type": "String",
-            "value": "cocteau666/mastodon:latest"
+            "defaultValue": "cocteau666/mastodon:latest"
         },
         "name": {
             "type": "String"
@@ -20,15 +20,15 @@
         },
         "sku": {
             "type": "String",
-            "value": "Standard"
+            "defaultValue": "Standard"
         },
         "skuCode": {
             "type": "String",
-            "value": "S1"
+            "defaultValue": "S1"
         },
         "workerSize": {
             "type": "String",
-            "value": "1"
+            "defaultValue": "1"
         },
         "serverFarmResourceGroup": {
             "type": "String"
