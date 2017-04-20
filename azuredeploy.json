@@ -60,24 +60,6 @@
             "dependsOn": [
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ]
-        },
-        {
-            "type": "Microsoft.Web/serverfarms",
-            "sku": {
-                "Tier": "[parameters('sku')]",
-                "Name": "[parameters('skuCode')]"
-            },
-            "kind": "linux",
-            "name": "[parameters('hostingPlanName')]",
-            "apiVersion": "2016-09-01",
-            "location": "[parameters('location')]",
-            "properties": {
-                "name": "[parameters('hostingPlanName')]",
-                "workerSizeId": "[parameters('workerSize')]",
-                "reserved": true,
-                "numberOfWorkers": "1",
-                "hostingEnvironment": "[parameters('hostingEnvironment')]"
-            }
         }
     ]
 }
